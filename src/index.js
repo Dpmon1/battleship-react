@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Game from './game';
+import Form from './form';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className = "Page">
+      <header className="Game-header">
+        BattleShips
+      </header>
+      <Form />
+      <Game />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
